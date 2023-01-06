@@ -15,7 +15,7 @@ makeCacheMatrix <- function(x = matrix(sample(1:100,9),3,3)) {    ## define the 
 }
 ##
 ## Same here, changed "mean" to "solve" and "m" to "s"
-cacheSolve <- function(x, ...) {                                  ## Return a matrix that is the inverse of 'x'
+cacheSolve <- function(x, ...) {                                  ## Return a matrix that is the inverse of 'x' 
   s <- x$getsolve()
   if(!is.null(s)) {
     message("getting inversed matrix")
